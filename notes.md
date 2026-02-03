@@ -1,27 +1,27 @@
-## Générer module
+# Générer module
 
 npx @nestjs/cli generate module messages
 
-## Générer module (--flat : sans créer de folder)
+# Générer module (--flat : sans créer de folder)
 
 npx @nestjs/cli generate controller messages/messages --flat
 
-### Test msg by ID
+# Test msg by ID
 GET http://localhost:3000/messages/1
 
-## Run
+# Run
 
 npm run start:dev
 
 
 
-### 4 ÉTAPES DE VALIDATION PIPE
+# 4 ÉTAPES DE VALIDATION PIPE
 
 ## 1. Aller dans main et autoriser pipe
 
 import {ValidationPipe} from '@nestjs/commun'
 
-# Add this in class
+### Add this in class
 
 app.useGlobalPipes(new ValidationPipe());
 
